@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>full functing calculator </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculatorBody">
+    <input type="text" name="containerItems" id="containerItems">
+    <br>
+    
+    <div class="numberContainer">
+      <button style="background-color:#a5a5a5;" class="buttonValue" onclick=" constant = ' ' ; 
+      document.querySelector('#containerItems').value = `${constant}` ;"> AC
+    </button>
+    <button style="background-color:#a5a5a5;" class="buttonValue" onclick=" constant = constant +'+/-' ; 
+      document.querySelector('#containerItems').value = `${constant}` ;">+/-
+    </button>
+    <button style="background-color:#a5a5a5;" class="buttonValue" onclick=" constant = constant +'%' ; 
+      document.querySelector('#containerItems').value = `${constant}` ;">%
+    </button>
+    <button  style="background-color:#fd9d22" class="buttonValue" onclick=" constant = constant +'/' ; 
+      document.querySelector('#containerItems').value = `${constant}` ;">÷
+    </button>
+    <button  class="buttonValue" onclick=" constant = constant +'7' ; 
+    document.querySelector('#containerItems').value = `${constant}` ;">7
+  </button>
+  <button  class="buttonValue" onclick=" constant = constant +'8' ; 
+    document.querySelector('#containerItems').value = `${constant}` ;">8
+  </button>
+  <button  class="buttonValue" onclick=" constant = constant +'9' ; 
+    document.querySelector('#containerItems').value = `${constant}` ;">9
+  </button>
+  <button style="background-color:#fd9d22"  class="buttonValue" onclick=" constant = constant +'*' ; 
+  document.querySelector('#containerItems').value = `${constant}` ;">×
+</button>
+
+<button  class="buttonValue" onclick=" constant = constant +'4' ; 
+document.querySelector('#containerItems').value = `${constant}` ;">4
+</button>
+<button  class="buttonValue" onclick=" constant = constant +'5' ; 
+document.querySelector('#containerItems').value = `${constant}` ;">5
+</button>
+<button  class="buttonValue" onclick=" constant = constant +'6' ; 
+document.querySelector('#containerItems').value = `${constant}` ;">6
+</button>
+<button style="background-color:#fd9d22"  class="buttonValue" onclick=" constant = constant +'-' ; 
+document.querySelector('#containerItems').value = `${constant}` ;">-
+</button>
+
+      <button  class="buttonValue" onclick=" constant = constant +'1' ; 
+      document.querySelector('#containerItems').value = `${constant}` ;">1
+    </button>
+    <button  class="buttonValue" onclick=" constant = constant +'2' ; 
+      document.querySelector('#containerItems').value = `${constant}` ;">2
+    </button>
+    <button  class="buttonValue" onclick=" constant = constant +'3' ; 
+      document.querySelector('#containerItems').value = `${constant}` ;">3
+    </button>
+    <button style="background-color:#fd9d22"  class="buttonValue" onclick=" constant = constant +'+' ; 
+      document.querySelector('#containerItems').value = `${constant}` ;">+
+    </button>
+   
+   
+    <button  style=" border-radius:55px; width:156px; text-align:left; padding-left:39px;" class="buttonValue"   onclick=" constant = constant +'0' ; 
+      document.querySelector('#containerItems').value = `${constant}` ;">0
+    </button>
+    <button  class="buttonValue" onclick=" constant = constant +'.' ; 
+      document.querySelector('#containerItems').value = `${constant}` ;">.
+    </button>
+    
+   
+   
+   
+    <button style="background-color:#fd9d22"  class="buttonValue" onclick=" constant = eval(constant);
+      document.querySelector('#containerItems').value = `${constant}` ;">=
+    </button>
+    
+    
+
+
+
+    </div>
+
+  </div>
+  
+</body>
+<script>
+  let constant = " ";
+  <!-- console.log(constant); -->
+  document.querySelector('#containerItems').value =`${constant}`;
+
+</script>
+</html>
