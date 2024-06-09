@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Sedan:ital@0;1&display=swap');
+
+*{
+    margin: 0%;
+    padding:0%;
+    /* font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: normal; */
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style:normal;
+}
+header{
+    height:100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)) ,url(images/homepage2.jpeg);
+    
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    position:relative;
+
+    
+}
+nav{
+    height: 100px;
+    width:100%;
+    text-align: center;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    padding-top:20px;
+    
+}
+nav .logo{
+    color: #fff;
+    font-size:2em ;
+    font-weight:400;
+
+}
+
+nav .list ul li{
+    display: inline;
+    
+    color:#fff;
+    padding:10px 20px;
+    font-size:20px;
+    cursor:pointer;
+    
+}
+nav .register a{
+    text-decoration:none;
+    color:#fff;
+    padding:8px 20px;
+    font-size:20px;
+    background:indianred;
+    border-radius: 15px;
+}
+.list li:hover{
+    border-bottom: 2px solid red ;
+}
+.register a:hover{
+    background-color:#fff;
+    color:indianred;
+}
+
+.header-text{
+    max-width: 650px;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+    color:#fff;
+}
+.header-text span{
+    line-height: 5px;
+}
+.header-text h1{
+    font-size:3.5em;
+}
+.header-text a{
+    margin-top:10px;
+    text-decoration:none;
+    color:#fff;
+    background-color:indianred;
+    font-size:15px;
+    padding:10px 20px;
+    letter-spacing: 5px;
+    
+}
+.header-text a:hover{
+    background-color:#fff;
+    color:indianred;
+}
+.all-containts{
+    margin-top:5px;
+    /* height: 555px;
+    width:255px; */
+    max-width:95%;
+    width:100%;
+    margin:5px;
+    padding:5px;
+    display:flex;
+    justify-content:space-between;
+
+    
+
+}
+#place{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        text-align: center;
+        font-weight: 600;
+        font-size: 3.5em;
+        margin:1%;
+
+}
+#all_containtsof{
+    padding: 15px;
+}
+#bordershadow{
+    cursor:pointer;
+
+    border: 2px solid rgb(0,0,0);
+    box-shadow: 3px 5px 5px rgba(38, 24, 24, 0.5);
+    border-radius:15px;
+   flex:1;
+    margin: 25px;
+
+}
+
+.item-1{
+    align-items: center;
+    
+}
+#bordershadow:hover{
+    box-shadow: 3px 5px 5px rgb(114, 194, 225);
+    
+    width:555px;
+   
+}
+.iteam-1 img{
+   
+    width:95%;
+    padding:10px;
+    height:255px;
+    
+
+    
+    
+}
+.image1{
+    border-radius:25px;
+}
+.containt{
+    padding: 10px;
+}
+
+span{
+    font-weight: 700;
+    padding: 15px 0px;
+}
+.containt p{
+    padding-top:15px;
+}
+#releated_place{
+    display:flex;
+    justify-content: space-evenly;
+}
+#piccontainer{
+    margin-top:25px;
+ height: inherit;
+}
+#piccontainer:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+.releated h2{
+    margin-left:3.5%;
+  font-size:3em;
+    font-weight: 700;
+}
+.pic img{
+    width:420px;
+ object-fit: cover;
+    height: 225px;
+}
+.text{
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+footer{
+    background-color:black;
+}
+.bottom_border{
+    display: inline;
+    height:15px;
+   
+    width:100%;
+}
+.light_color{
+    background: #4263c1;
+    width: 24%;
+    float: left;
+    height: 11px;
+
+}
+.dark_color{
+    background: #468be8;
+    width: 76%;
+    float: left;
+    height: 11px;
+}
+.offers{
+   
+    color:#fff;
+    padding:25px;
+    max-width: 20%;
+
+}
+  .offers ul li{
+    list-style-type: none;
+    padding: 8px;
+    border-top: .2px solid #9b9797
+    
+}
+.offers ul li:hover{
+    background-color:rgba(205, 185, 185, 0.2);
+}
+.offers sub{
+    color:indianred;
+    padding-left:3px;
+
+}
+#footer_containts{
+   display:inline-flex;
+   cursor:pointer;
+
+}
+
+.details{
+    padding: 35px;
+    color:#fff;
+    width:80%;
+}
+.details span{
+    margin-bottom:10px;
+    font-size:2em;
+    font-weight: 700;
+}
+.listiteams{
+    display:flex;
+    justify-content: space-between;
+    padding:25px;
+   
+}
+.listiteams ul li{
+    list-style-type: none;
+    line-height: 2;
+   
+}
+.listiteams ul li:hover{
+    text-decoration:underline;
+    font-size:22px;
+   
+}
+
