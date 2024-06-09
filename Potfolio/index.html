@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal potfolio </title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <header>
+        
+            <nav class="header">
+
+                <div class="name">Rakesh_Singh</div>
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">Profile</a></li>
+                    <li> <a href="#">Contact</a></li>
+                    <li> <a href="#">About</a></li>
+                </ul>
+              
+
+            </nav>
+            <div class="containt">
+                <div class="text">
+                    <h1>Front-End React Developer 👋🏼</h1>
+                   <p>Hi, I'm Rakesh singh . A possinate Front-end React Developer form Rvscet.</p>
+                     
+                </div>
+                <div class="image">
+                   
+                </div>
+            </div>
+            <div class="tech_stack">
+                
+                <div class="logo">
+                    <p>Tech Stack</p>
+                    <img   class="small_images" src="image/html.webp" alt="html">
+                    <img   class="small_images" src="image/css.png" alt="html">
+                    <img   class="small_images" src="image/javascript2.png" alt="html">
+                    <img   class="small_images" src="image/node.png" alt="html">
+                </div>
+            </div>
+    </header>
+   
+    <body>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img class="myphoto" src="image/rakesh 2.jpg" alt="images">
+    
+                    </div>
+                    <div class="about-col-2">
+                        <h1>About me</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo optio deleniti consequuntur! Dicta autem, nisi aliquid maxime vel, sint ad odio suscipit accusamus rerum architecto doloribus vero ipsam quos sunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, ea culpa nulla veniam quasi impedit velit perferendis praesentium eos qui facilis molestiae nisi porro maxime quia quas voluptate autem ipsum voluptates ullam consequuntur consectetur voluptatum. Porro voluptas dolorum cumque, commodi iure aliquid similique culpa laboriosam numquam?</p>
+                        <div class="tab-tittles">
+                            <p class="tab-links active-link" onclick="opentab('skills')"> skills</p>
+                            <p class="tab-links" onclick="opentab('experience')"> Experience </p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-containts active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br> Desiging web pages.</li>
+                            </ul>
+                            <ul>
+                                <li><span>Web Developement</span><br> Web Develpoment.</li>
+                            </ul>
+                            <ul>
+                                <li><span>Language Known</span><br> C C++ Java Python</li>
+                            </ul>
+                        </div>
+                        <div class="tab-containts" id="experience">
+                            <ul>
+                                <li><span>UI/UX</span><br> Desiging web pages.</li>
+                            </ul>
+                            <ul>
+                                <li><span>Web Developement</span><br> Web Develpoment.</li>
+                            </ul>
+                            <ul>
+                                <li><span>Language Known</span><br> C C++ Java Python</li>
+                            </ul>
+                        </div>
+                        <div class="tab-containts" id="education">
+                            <ul>
+                                <li><span>UI/UX</span><br> Desiging web pages.</li>
+                            </ul>
+                            <ul>
+                                <li><span>Web Developement</span><br> Web Develpoment.</li>
+                            </ul>
+                            <ul>
+                                <li><span>Language Known</span><br> C C++ Java Python</li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <script>
+            var tablinks  = document.getElementsByClassName("tab-links");
+            var tabcontents  = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+            }
+
+        </script>
+        
+    </body>
+    <footer>
+
+    </footer>
+  
+    
+</body>
+</html>
